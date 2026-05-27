@@ -4,10 +4,14 @@
   "description": "Projeto de Pipeline CI/CD para o MBA de Engenharia de Dados",
   "main": "index.js",
   "scripts": {
-    "lint": "htmlhint site/*.html",
+    "lint:html": "htmlhint site/*.html",
+    "lint:css": "stylelint site/*.css",
+    "lint": "npm run lint:html && npm run lint:css",
     "test": "node test.js"
   },
   "devDependencies": {
-    "htmlhint": "^1.1.4"
+    "htmlhint": "^1.1.4",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0"
   }
 }

@@ -12,6 +12,14 @@ if (!fs.existsSync(filePath)) {
 }
 console.log('✅ Arquivo site/index.html encontrado.');
 
+// 1.1 Verificar se o CSS existe
+const cssPath = path.join(__dirname, 'site', 'style.css');
+if (!fs.existsSync(cssPath)) {
+  console.error('ERRO: Arquivo site/style.css não encontrado!');
+  process.exit(1);
+}
+console.log('✅ Arquivo site/style.css encontrado.');
+
 // 2. Verificar conteúdo do arquivo
 const content = fs.readFileSync(filePath, 'utf8');
 
