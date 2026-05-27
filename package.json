@@ -1,0 +1,13 @@
+{
+  "name": "pipeline-ci-cd-mackenzie",
+  "version": "1.0.0",
+  "description": "Projeto de Pipeline CI/CD para o MBA de Engenharia de Dados",
+  "main": "index.js",
+  "scripts": {
+    "lint": "htmlhint site/*.html",
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4"
+  }
+}
